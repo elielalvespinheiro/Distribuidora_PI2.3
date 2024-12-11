@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Bebidas</title>
+    <link rel="stylesheet" href="Produtos CSS/produtos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Bebidas Disponíveis</h1>
+        <div id="produtos-container"></div>
+    </div>
+
+    <div class="carrinho">
+        <h2>Seu Carrinho</h2>
+        <ul id="listaCarrinho"></ul>
+        <h3>Endereço de Entrega</h3>
+        <label for="enderecoCliente">Digite seu endereço:</label>
+        <input type="text" id="enderecoCliente" placeholder="Ex: Rua Exemplo, Nº 123, Bairro" required>
+        <button onclick="enviarWhatsApp()">Enviar para o WhatsApp</button>
+    </div>
+
+    <script src="query/produto.js"></script>
+</body>
+</html>
